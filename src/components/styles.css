@@ -1,0 +1,94 @@
+/* styles.css */
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.type-fire {
+  color: #FF5733; /* Fire type color */
+}
+
+.type-water {
+  color: #3399FF; /* Water type color */
+}
+
+.type-grass {
+  color: green;
+}
+.type-poison {
+  color: rgb(91, 5, 91);
+}
+
+.type-bug{
+  color: limegreen;
+}
+
+.type-normal{
+  color: rgb(136, 134, 134);
+}
+
+.type-electric {
+  color: rgb(198, 198, 47);
+}
+
+.type-ground{
+  color: brown;
+}
+
+.type-fairy{
+  color: pink;
+}
+
+.type-psychic{
+  color: rgb(158, 94, 158);
+}
+
+.type-fighting {
+  color: rgb(255, 172, 142);
+}
+
+.type-steel {
+  color: rgba(152, 141, 141, 0.554)
+}
+
+.type-rock {
+  color: rgb(120, 31, 31);
+}
+
+.type-ice {
+  color: darkblue;
+}
+
+
+/* Pokemon Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Add some margin at the bottom */
+}
+
+.logo-image {
+  width: 300px; /* Set the width of your image */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+/* Pokeball Icon style */
+.centerIcon {
+  padding: 10px;
+  padding-top: 35px;
+}
