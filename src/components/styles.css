@@ -1,4 +1,4 @@
-/* styles.css */
+/* search bar styling */
 .search-bar {
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
 }
-
+/* styling types */
 .type-fire {
   color: #FF5733; /* Fire type color */
 }
