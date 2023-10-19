@@ -92,6 +92,14 @@
   color: lightblue;
 }
 
+.type-dragon {
+  color: darkgoldenrod;
+}
+
+.type-ghost {
+  color: rgb(130, 4, 130);
+}
+
 
 /* Pokemon Logo */
 .logo-container {
