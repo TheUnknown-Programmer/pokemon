@@ -1,3 +1,18 @@
+/* centers pokemon grid */
+.pokemon-grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+
 /* search bar styling */
 .search-bar {
   display: flex;
@@ -73,6 +88,10 @@
   color: darkblue;
 }
 
+.type-flying {
+  color: lightblue;
+}
+
 
 /* Pokemon Logo */
 .logo-container {
@@ -91,4 +110,27 @@
 .centerIcon {
   padding: 10px;
   padding-top: 35px;
+}
+
+/* contact us button */
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh; /* You can adjust the height as needed */
+}
+
+.contact-button {
+  
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
 }
