@@ -67,7 +67,7 @@ const PokemonDataTable = () => {
   );
 
   return (
-    <div>
+    <div style={{display: 'flex', flexDirection: 'column'}}>
       <input
         type="text"
         placeholder="Search Pokémon..."
@@ -77,12 +77,10 @@ const PokemonDataTable = () => {
 
       />
 
-      <div style={{ height: 800, width: '100%' }}>
+      <div style={{ height: 800, width: 'fit-content', justifyContent: 'center' }}>
         <DataGrid
           rows={filteredPokemonData}
           columns={columns}
-          pageSize={10}
-          rowsPerPageOptions={[10, 25, 50]}
           pagination
           checkboxSelection
           onPageChange={(newPageNumber) => setPageNumber(newPageNumber)}

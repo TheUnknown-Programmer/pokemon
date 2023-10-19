@@ -1,5 +1,5 @@
-// src/components/JsonForm.js
 import React, { useState } from 'react';
+import styles from './JsonForm.module.css';
 
 function JsonForm() {
     const [formData, setFormData] = useState({
@@ -34,18 +34,23 @@ function JsonForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label>Name:</label>
-                <input type="text" name="name" value={formData.name} onChange={handleChange} />
-            </div>
-            <div>
-                <label>Email:</label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} />
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+        <div className={styles.formContainer}>
+            <form onSubmit={handleSubmit} className={styles.form}>
+                <div className={styles.formGroup}>
+                    <label className={styles.label}>Name:</label>
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} className={styles.input} />
+                </div>
+                <div className={styles.formGroup}>
+                    <label className={styles.label}>Email:</label>
+                    <input type="email" name="email" required value={formData.email} onChange={handleChange} className={styles.input} />
+                </div>
+                <button type="submit" className={styles.submitButton}>Submit</button>
+            </form>
+
+            
+        </div>
     );
+    
 }
 
 export default JsonForm;
